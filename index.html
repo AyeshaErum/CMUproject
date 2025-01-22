@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+    }
+
+    header {
+      background-color: #0074e1;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    header .logo img {
+      width: 40px;
+      margin-right: 10px;
+    }
+
+    header nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      padding: 20px;
+      flex: 1;
+      min-width: 300px;
+      max-width: 400px;
+    }
+
+    .card h3 {
+      color: #0074e1;
+      margin-bottom: 10px;
+    }
+
+    .footer-buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .footer-buttons button {
+      background-color: #a4d74b;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .footer-buttons button:hover {
+      background-color: #8cb63f;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #2e3a46;
+      color: white;
+    }
+
+    .contact-support {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #ff8c42;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .contact-support:hover {
+      background-color: #e57836;
+    }
+
+    .icon {
+      margin-right: 10px;
+    }
+
+    .dropdown {
+      margin-top: 20px;
+    }
+
+    .dropdown select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <!-- <img src="https://via.placeholder.com/40" alt="Charity Logo"> -->
+      <h1>Charity Dashboard</h1>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shelters</a>
+      <a href="#">Donations</a>
+      <a href="#">Settings</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h3>Shelter Overview</h3>
+      <p><strong>Demographics:</strong></p>
+      <ul>
+        <li>Total Residents: 350</li>
+        <li>Children: 120</li>
+        <li>Men: 130</li>
+        <li>Women: 100</li>
+      </ul>
+      <p><strong>Shelter Capacity:</strong> 500 residents</p>
+    </div>
+
+    <div class="card">
+      <h3>Current Resources</h3>
+      <ul>
+        <li>Food: 200 units</li>
+        <li>Clothing: 150 units</li>
+        <li>Sanitary: 100 units</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Volunteer Request Details</h3>
+      <p><strong>Request Info:</strong></p>
+      <ul>
+        <li>Type: Food</li>
+        <li>Quantity: 50 units</li>
+        <li>Urgency: High</li>
+        <li>Timestamp: 2023-10-12 14:30</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Disaster Area Info</h3>
+      <ul>
+        <li>Location: East Coast</li>
+        <li>Severity: Severe</li>
+        <li>Accessibility: Difficult</li>
+      </ul>
+    </div>
+
+    <div class="card dropdown">
+      <h3>Filter by Shelter</h3>
+      <select>
+        <option value="">Select a Shelter</option>
+        <option value="shelter1">Shelter 1</option>
+        <option value="shelter2">Shelter 2</option>
+        <option value="shelter3">Shelter 3</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="footer-buttons">
+    <button><i class="fas fa-chart-line icon"></i>Forecast Needs</button>
+    <button><i class="fas fa-box icon"></i>Monitor Inventory</button>
+    <button><i class="fas fa-history icon"></i>Donation History</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Charity Organization</p>
+  </footer>
+
+  <div class="contact-support">
+    <i class="fas fa-headset"></i> Contact Support
+  </div>
+
+</body>
+</html>
